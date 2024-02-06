@@ -1,0 +1,153 @@
+Control
+	NIST SP  800-63 (Draft Version 4) Guidance
+	IA-1
+	* 800-63-4 Sections 2.1, 4.1, 5.5
+* 800-63C-4 Sections 5, 5.1 and subsections, 5.2 and subsections
+	* 800-63-4 Sections 2.3.1, 5, 5.1.2, 5.2.2.2
+* 800-63A-4 Sections 4.3.3.2, 4.3.4.4, 5.1.2.1, 5.1.3, 5.1.5, 5.1.8, 5.1.10, 7, 8.3, 8.6, 9
+* 800-63B-4 Sections 4, 4.1.2, 4.1.4, 4.1.5, 4.2.2, 4.2.4, 4.2.5, 4.3.2, 4.3.4, 4.3.5, 4.4, 5.1.1.2, 5.1.2.1, 5.1.3.2, 5.1.4.1, 5.1.5.1, 5.1.7.1, 5.1.9.1, 5.2.3, 5.2.4, 5.2.5, 5.2.7, 5.2.12, 6.1.2.3, 6.4, 7.1, 9.3, 9.4, 10, 10.4, 11
+* 800-63C-4 Sections 4, 4.1, 4.2, 4.3, 5.2.2, 7.1, 9.1, 10, 11, 12.2, 12.3
+	* 800-63-4 Section 5 and subsections
+* 800-63A-4 Sections 5.1.1, 5.1.1.1, 5.1.10, 10.3 fourth Description
+	IA-2
+	* 800-63-4 Section 2.1, 4 and subsections
+* 800-63A-4 Section 4 and subsections, Section 5 and subsections.  However, best to read 800-63A-4 in full
+* 800-63B-4 Sections 4 and subsections and 5 and subsections. However, it is best to read 800-63B-4 in full
+* For CSPs that operate identity proofing and enrollment services, see also 800-63A-4 Section 5 and subsections; Section 6.1
+* 800-63B-4 Sections 4 and subsections; 6.1 and subsections; 6.1.2 and subsections; 6.1.3
+	IA-2(1)
+	* 800-63B-4 Sections 4.1, 4.1.1; 4.2, 4.2.1; 4.3, 4.3.1; 4.4, 4.4.1; 5.1.1; 5.1.3.4; 5.1.5 and subsections; 5.1.8 and subsections; 5.1.9 and subsections; 5.2.3; 10.2.5, 10.2.8, 10.2.9, 10.3
+	IA-2(2)
+	* 800-63B-4 Sections 4.1, 4.1.1; 4.2, 4.2.1; 4.3, 4.3.1; 4.4, 4.4.1; 5.1.1; 5.1.3.4; 5.1.5 and subsections; 5.1.8 and subsections; 5.1.9 and subsections; 5.2.3; 10.2.5, 10.2.8, 10.2.9, 10.3
+	IA-2(5)
+	* 800-63B-4 Section 4
+	IA-2(6)
+	* 800-63B-4 Sections 4.1, 4.1.1; 4.2, 4.2.1; 4.3, 4.3.1; 4.4, 4.4.1; 5.1.1; 5.1.3.4; 5.1.5 and subsections; 5.1.8 and subsections; 5.1.9 and subsections; 5.2.3; 10.2.5, 10.2.8, 10.2.9, 10.3
+	* 800-63B-4 Sections 4.2, 4.2.1, 4.3, 4.3.1, 5.1.3.4, 5.1.5, 5.1.8, 5.1.9
+	* 800-63B-4 Section 4 and subsections, 4.5
+	IA-2(8)
+	* 800-63B-4 Sections 4.2.2, 4.3.2, Table 1, 5.1.3.2, 5.1.4.2, 5.1.5.2, 5.2.5, 5.2.8, Table 4
+	IA-2(10)
+	* 800-63C-4
+	IA-2(13)
+	* 800-63B-4 Table 1, Section 5.1.3 and subsections; 10.2.3; 11
+* 800-63C-4 Section 6.1.2.2
+	IA-3
+	Not Applicable – NIST 800-63 scope is limited to identity proofing and authentication of users (such as employees, contractors, or private individuals); devices are out of scope.
+	IA-3(1)
+	Not Applicable – NIST 800-63 scope is limited to identity proofing and authentication of users (such as employees, contractors, or private individuals); devices are out of scope.
+	IA-3(3)
+	Not Applicable – NIST 800-63 scope is limited to identity proofing and authentication of users (such as employees, contractors, or private individuals); devices are out of scope.
+	IA-3(4)
+	Not Applicable – NIST 800-63 scope is limited to identity proofing and authentication of users (such as employees, contractors, or private individuals); devices are out of scope.
+	IA-4
+	* 800-63A-3 Sections 2.1, 4 and subsections, 6.1, Table 1
+	* 800-63A-3 Sections 2.1, 4 and subsections 6.1, Table 1
+	* 800-63B-4 Section 4
+	IA-4(1)
+	None
+	IA-4(5)
+	* 800-63C-4 Section 5.2 and subsections
+	IA-4(6)
+	* 800-63C-4 Section 6.3.1
+	IA-4(8)
+	* 800-63-4 Section 4.4.1
+* 800-63B-3 Section 4
+* 800-63C-4 Sections 5.2.2, 5.5, 6.2.5 and subsections, 9.1, 9.2
+	IA-4(9)
+	* 800-63-4 Sections 2.3.1, 4.3.2
+* 800-63A-4 Section 5.1.4
+* 800-63C-4 Sections 5.4.2, 6.3.1
+	IA-5
+	* 800-63-4 Sections 2.1, 4.2, 5.0, 5.1 and subsections, 5.2.2.1, 5.2.3.1, 5.3 and subsections, Figures 1 & 2
+	* 800-63-4 Sections 5.0, 5.1 and subsections, 5.2.2.2, 5.2.3.2, 5.3 and subsections,  
+* 800-63B-4 Section 4 and subsections, 5 and subsections. Suggest reading other sections as well for full context/insight.
+	* 800-63-4 Sections 5.2.1, 5.2.2.2, 5.2.3.2, 5.3 and subsections
+* 800-63B-4 Section 6 and subsections
+	* 800-63B-4 Sections 6.1.4, 6.2, 6.3
+	* 800-63B-4 Sections 4.1.4, 4.2.4, 4.3.4, 5.1 and subsections, 5.2.1, 5.2.3, 6.1, 6.1.1, 6.1.2.4
+	* 800-63B-3 Section 5.2.1
+	IA-5(1)
+	* 800-63B-4 Sections 5.1.1 and subsections, See also Section 10.2.1 and Appendix A for general discussion 
+	* 800-63B-4 Section 5.1.1 and subsections
+	* 800-63B-4 Section 5.1.1 and subsections
+	* 800-63B-4 Section 5.1.1 and subsections, Table 4
+	* 800-63B-4 Section 6.1.2.3, 8.3
+	* 800-63B-4 Section 5.1.1 and subsections
+	* 800-63B-4 Sections 5.1.1 and subsections
+	* 800-63B-4 Section 5.1.1 and subsections
+	IA-5(2)
+	* 800-63B-4 Section 5.1.6.1, 5.1.7.1, 5.1.8.1
+	* 800-63A-3 Sections 2.1, 4 and subsections, 6.1, Table 1
+	IA-5(5)
+	IA-5(6)
+	* 800-63-4 Section 5 and subsections
+* 800-63B-4 Sections 4.1.4, 4.2.4, 4.3.4, 5.2.1
+	IA-5(7)
+	IA-5(8)
+	* 800-63-4 Section 4.4
+* 800-63C-4 for overall guidance on Federation / SSO
+	IA-5(9)
+	IA-5(10)
+	* 800-63B-4 Sections 6.1.2.4, 6.1.3
+	IA-5(12)
+	* 800-63B-4 Section 5.1.8
+	IA-5(16)
+	* 800-63-4 Section 4.2
+* 800-63A-4 Section 9.3, 9.4
+* 800-63B-4 Sections 6.1 and subsections
+* 800-63C-4 Sections 6.1.2.2
+	IA-5(17)
+	* 800-63-A-4 Table 3, Sections 5.1.1, 5.3.4, 5.4.4, 5.5.4
+* 800-63B-4 Section 5.2.3
+	IA-5(18)
+	* 800-63B-4 Section 5.1.1.2, 5.1.2.2, 5.1.1.4
+	* 800-63B-4 Section 5.1.1.2, 5.1.2.2, 5.1.1.4
+* 800-63C-4 Section 12.2
+	IA-6
+	* 800-63B-4 Section 5.1.1.2
+	IA-7
+	* 800-63-4 Section 2.3.1
+* 800-63B-4 Section 4, 4.3.2, 5.1.5, 5.1.8, 5.1.9, 5.1.7.1, 5.1.9.1, Table 1
+	IA-8
+	* 800-63-4 Section 2.1, 4 and subsections, Appendix A.1 (Federated Identifier, Identity, Identity Resolution)
+* 800-63A-4 Section 4 and subsections, Section 5 and subsections. However, best to read 800-63A-4 in full
+* 800-63B-4 Sections 4 and subsections and 5 and subsections. However, best to read 800-63B-4 in full
+* 800-63C-4 Sections 4 and subsections and 5 and subsections. However, best to read 800-63C-4 in full
+	IA-8(2)
+	* 800-63-4 Section 2.3.1
+* 800-63A-4 Sections 4.3.2 (6), 5.3.4, 5.5.4
+* 800-53B-4 Section 4 and subsections, 5 and subsections, 6.1.2.4
+	* 800-63A-4  Sections 2, 5, 5.1.5, 6.1, 6.3.1, 7.2
+	IA-8(4)
+	* 800-63-4 Sections 4.4, 4.4.2, References section
+* 800-63A-4 References section
+* 800-63B-4 References section
+* 800-63C-4 Sections 4, 4.1, 4.2, 4.3, 5.1.2, 6.2.3, 6.3, 10.2, 10.2.2, 12 and subsections, References section
+	IA-8(6)
+	* 800-63-4 Sections 2.3.2, 5.5
+* 800-63A-4 Section 5.1.2.1
+* 800-63B-4 Sections 4.9.2, 4.9.3, 4.9.4
+* 800-63C-4 Sections 5.5, 6.2.4, 6.2.5 and subsections, 6.3, 9.1
+	IA-9
+	* 800-63B-4 Sections 4.1.2, 4.2.2, 4.3.2, Table 1, 5.1.2.2, 5.1.4.2, 5.1.5.2, 5.2.5, 5.2.5.1, 5.2.5.2, 7.1.3 (Devices), Table 4
+	IA-10
+	* 800-63B-4 Section 5.2.2
+	IA-11
+	* 800-63B-4 Sections 4.1.3, 4 4.2.3, 4.3.3, 4 7.2
+	IA-12
+	* 800-63-4 Sections 4.2, 4.3.2, 5 and subsections
+* 800-63A-4 Section 4 and subsections, 5 and subsections
+	* 800-63A-4 Sections 2, 2.1, 4.1 and subsections, 4.2, 4.3.3.1, 4.3.3.2, 4.3.3.3, 5.1.8, 6.1, 6.3.1
+* 800-63C-4 Sections 2, 6
+	* 800-63A-4 Section 4 and subsections, 5.1.8, 5.1.9 and subsections, 5.1.10, 5.2, 5.3 and subsections, 5.4 and subsections, 5.5 and subsections, Table 1, 7 and subsections
+	IA-12(2)
+	* 800-63-4 Sections 5.2.2.1, 5.3.2, 5.3.3
+	IA-12(3)
+	* 800-63A-4 Sections 4.3, 4.4
+	IA-12(4)
+	* 800-63A-4 Sections 4.3.4.3, 4.4.1, 5.3.2, 5.5.7
+	IA-12(5)
+	* 800-63A-4 Sections 5.1.6, 5.1.7
+	IA-12(6)
+	* 800-63C-4 Section 4

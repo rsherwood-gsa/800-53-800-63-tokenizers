@@ -1,0 +1,52 @@
+4.3.: The CSP SHALL determine the acceptability of presented identity evidence for identity proofing based on the evidence characteristics in this section.
+4.3.1.: Acceptable physical evidence SHALL contain all of the following characteristics:
+4.3.2.: Acceptable digital evidence SHALL contain all of the following characteristics:
+4.3.3.1.: In order to be considered FAIR, identity evidence SHALL meet all the following requirements:
+4.3.3.2.: In order to be considered STRONG, identity evidence SHALL meet all the following requirements:
+4.3.3.3.: In order to be considered SUPERIOR, identity evidence SHALL meet all the following requirements:
+4.3.4.: The CSP SHALL validate all identity evidence collected to meet evidence collection requirements and all core attribute information required by the CSP identity service.
+4.3.4.1.: The CSP SHALL validate the authenticity, accuracy, and currency of presented evidence by:
+4.3.4.1.: The CSP SHALL validate that the evidence is current through confirmation that its expiration date has not passed or that evidence without an expiration date was issued
+4.3.4.1.: The CSP SHALL use the public key of the issuing authority of the evidence to verify digitally signed evidence or attribute data objects.
+4.4.1.: The CSP SHALL verify the linkage of the claimed identity to the applicant engaged in the identity proofing process through one or more of the following methods, depending on the IAL identity verification requirements presented in Sec. 5.
+5.1.1.: The CSP SHALL conduct its operations according to a practice statement that details all identity proofing processes as they are implemented to achieve the defined IAL.
+5.1.1.: The practice statement SHALL include, at a minimum:
+2.: Knowledge of the SSN SHALL NOT be considered identity evidence.
+5.1.3.: In support of the goal of improved equity, and as part of its overall risk assessment process, the CSP SHALL assess the elements of its identity service to identify processes or technologies that can possibly result in inequitable access, treatment, or outcomes for members of one group as compared to others.
+11.: world users, participation by users SHALL be voluntary.
+5.1.9.1.: CSPs SHALL provide the option for the use of trusted referees for remote identity proofing at IALs 1 and 2.
+5.3.1.: The CSP SHALL implement a means to prevent automated attacks on the identity proofing process.
+5.3.2.1.: For remote or in-person identity proofing, the CSP SHALL collect one of the following from the applicant:
+5.3.3.: The CSP SHALL validate the genuineness of each piece of SUPERIOR and STRONG evidence by one of the following:
+3.: The CSP SHALL validate the genuineness of each piece of FAIR evidence by visual inspection by trained personnel.
+3.: The CSP SHALL validate all core attributes by both:
+2.: For added assurance, the CSP SHALL evaluate the core attributes, as validated by various sources, for overall consistency.
+5.3.4.: The CSP SHALL verify the binding of the applicant to the claimed identity by one of the following:
+5.4.1.: The CSP SHALL implement a means to prevent automated attacks on the identity proofing process.
+5.4.2.1.: For remote or in-person identity proofing, the CSP SHALL collect one of the following from the applicant:
+5.4.3.: The CSP SHALL validate the genuineness of each piece of SUPERIOR and STRONG evidence by one of the following:
+3.: The CSP SHALL validate all core attributes by:
+2.: For added assurance, the CSP SHALL evaluate the core attributes, as validated by various sources, for overall consistency.
+5.4.4.1.: The CSP SHALL verify the binding of the applicant to the claimed identity by one of the following:
+5.4.4.2.: The CSP SHALL verify the binding of the applicant to the claimed identity by physical or biometric comparison of the facial image of the applicant to the facial portrait contained on a piece of presented SUPERIOR or STRONG evidence.
+5.4.5.: Upon the successful completion of identity proofing at IAL2, the CSP SHALL send a notification of proofing to a validated address for the applicant, as specified in Sec. 5.1.7.
+5.5.1.: The CSP SHALL implement a means to prevent automated attacks on the identity proofing process.
+5.5.2.1.: The CSP SHALL collect evidence from the applicant according to one of the following options:
+5.5.3.1.: The CSP SHALL validate the genuineness of each piece of SUPERIOR evidence by confirming the integrity of its cryptographic security features and validating any digital signatures.
+5.5.3.1.: The CSP SHALL validate the genuineness of each piece of STRONG evidence by one of the following:
+2.: For added assurance, the CSP SHALL evaluate the core attributes, as validated by various sources, for overall consistency.
+5.5.4.: The CSP SHALL verify the binding of the applicant to the claimed identity by one of the following:
+5.5.5.: Upon the successful completion of identity proofing at IAL3, the CSP SHALL send a notification of proofing to a validated address for the applicant, as specified in Sec. 5.1.7.
+5.5.6.: The CSP SHALL collect and record a biometric sample at the time of proofing (e.g., facial image, fingerprints) for the purposes of non-repudiation and re-proofing.
+5.5.7.: In-person proofing at IAL3 SHALL be conducted in one of two ways:
+6.1.: SHALL enroll the applicant as a subscriber into its identity service and establish a unique
+6.1.: The CSP SHALL assign a unique identifier to each subscriber account.
+6.1.: At a minimum the CSP SHALL include the following information in each subscriber account:
+6.1.: The CSP SHALL record information in the subscriber account that was collected during the identity proofing process or subsequently updated for each subscriber, including:
+6.1.: The CSP SHALL perform a privacy risk assessment for the processing, retention, or disclosure of any personal information maintained in the subscriber account in accordance with Sec. 5.1.2.
+6.2.: In order to meet the requirement that accounts containing PII be protected by multifactor authentication (MFA), the CSP SHALL provide a way for subscribers to access the information in their subscriber account through AAL2 or AAL3 authentication processes using authenticators registered to the subscriber account.
+6.2.: The CSP SHALL provide the capability for subscribers to change or update the personal information contained in their subscriber account.
+6.3.1.: The CSP SHALL establish and maintain a unique subscriber account for each active subscriber in the CSP identity system from the time of enrollment to the time of account closure, as described below.
+6.3.1.: Until the account is closed, the CSP SHALL provide for the use of the subscriber account, information contained in the account, and registered authenticators.
+6.3.2.: The CSP SHALL terminate the subscriber account and discontinue its use when one of the following occur:
+6.3.2.: The CSP SHALL delete any personal or sensitive information from the subscriber account records following account termination in accordance with the record retention and disposal requirements.

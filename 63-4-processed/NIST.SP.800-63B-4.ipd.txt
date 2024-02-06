@@ -1,0 +1,280 @@
+4.: SHALL be authenticated with a process whose strength is equal to or greater than the requirements at that level.
+4.: SHALL be used each time that subscriber authenticates to that RP.
+4.: Therefore, federal government agencies SHALL select a minimum of AAL2 when PII or other personal information is made available online.
+4.1.1.: AAL1 authentication SHALL occur by the use of any of the following authenticator types, which are defined in Sec. 5:
+4.1.2.: Cryptographic authenticators used at AAL1 SHALL use approved cryptography.
+4.1.2.: Communication between the claimant and verifier SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to adversary-in-the-middle (AitM) attacks.
+4.1.2.: Verifiers operated by or on behalf of federal government agencies at AAL1 SHALL be validated to meet the requirements of [FIPS140]
+4.1.3.: Periodic reauthentication of subscriber sessions SHALL be performed as described in Sec. 7.2.
+4.1.4.: The CSP SHALL employ appropriately tailored security controls from the baseline security controls defined in [SP800-53] or equivalent federal (e.g., [FEDRAMP]) or industry standard that the organization has determined for the information systems, applications, and online services that these guidelines are used to protect.
+4.1.4.: SHALL ensure that the minimum assurance-related controls for the appropriate systems, or equivalent, are satisfied.
+4.1.5.: The CSP SHALL comply with its respective records retention policies in accordance with applicable laws, regulations, and policies, including any National Archives and Records Administration (NARA) records retention schedules that may apply.
+4.1.5.: If the CSP opts to retain records in the absence of any mandatory requirements, the CSP SHALL conduct a risk management process, including assessments of privacy and security risks, to determine how long records should be retained and SHALL inform the subscriber of that retention policy.
+4.2.1.: At AAL2, authentication SHALL occur by the use of either a multi-factor authenticator or a combination of two single-factor authenticators.
+4.2.1.: When a combination of two single-factor authenticators is used, the combination SHALL include a Memorized Secret authenticator (Sec. 5.1.1) and one physical authenticator (i.e., “something you have”) from the following list:
+4.2.2.: Cryptographic authenticators used at AAL2 SHALL use approved cryptography.
+4.2.2.: Authenticators procured by federal government agencies SHALL be validated to meet the requirements of [FIPS140]
+4.2.2.: At least one authenticator used at AAL2 SHALL be replay resistant as described in Sec. 5.2.8.
+4.2.2.: Communication between the claimant and verifier SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to AitM attacks.
+4.2.2.: Verifiers operated by or on behalf of federal government agencies at AAL2 SHALL be validated to meet the requirements of [FIPS140]
+4.2.2.: When a biometric factor is used in authentication at AAL2, the performance requirements stated in Sec. 5.2.3 SHALL be met, and the verifier SHOULD make a determination that the biometric sensor and subsequent processing meet these requirements.
+4.2.3.: Periodic reauthentication of subscriber sessions SHALL be performed as described in
+4.2.3.: At AAL2, authentication of the subscriber SHALL be repeated at least once per
+4.2.4.: The CSP SHALL employ appropriately tailored security controls from the baseline security controls defined in [SP800-53] or equivalent federal (e.g., [FEDRAMP]) or industry standard that the organization has determined for the information systems, applications, and online services that these guidelines are used to protect.
+4.2.4.: SHALL ensure that the minimum assurance-related controls for the appropriate systems, or equivalent, are satisfied.
+4.2.5.: The CSP SHALL comply with its respective records retention policies in accordance with applicable laws, regulations, and policies, including any NARA records retention
+4.2.5.: If the CSP opts to retain records in the absence of any mandatory requirements, the CSP SHALL conduct a risk management process, including assessments of privacy and security risks to determine how long records should be retained and SHALL inform the subscriber of that retention policy.
+4.3.: AAL3 authentication SHALL use a hardwarebased authenticator and an authenticator that provides phishing resistance — the same device MAY fulfill both these requirements.
+4.3.: SHALL prove possession and control of two distinct authentication factors through
+4.3.1.: AAL3 authentication SHALL occur by the use of one of a combination of authenticators satisfying the requirements in Sec. 4.3.
+4.3.2.: Communication between the claimant and verifier SHALL be via an authenticated protected channel to provide confidentiality of the authenticator output and resistance to AitM attacks.
+4.3.2.: At least one cryptographic authenticator used at AAL3 SHALL be phishing resistant as described in Sec. 5.2.5 and SHALL be replay resistant as described in Sec. 5.2.8.
+4.3.2.: SHALL demonstrate authentication intent from at least one authenticator as described in Sec. 5.2.9.
+4.3.2.: Multi-factor authenticators used at AAL3 SHALL be hardware cryptographic modules validated at [FIPS140]
+4.3.2.: Single-factor cryptographic devices used at AAL3 SHALL be validated at [FIPS140]
+4.3.2.: Verifiers at AAL3 SHALL be validated at [FIPS140]
+4.3.2.: Verifiers at AAL3 SHALL be verifier compromise resistant as described in Sec. 5.2.7 with respect to at least one authentication factor.
+4.3.2.: When a biometric factor is used in authentication at AAL3, the verifier SHALL make a determination that the biometric sensor and subsequent processing meet the performance requirements stated in Sec. 5.2.3.
+4.3.3.: Periodic reauthentication of subscriber sessions SHALL be performed as described in Sec. 7.2.
+4.3.3.: At AAL3, authentication of the subscriber SHALL be repeated at least once per 12 hours during an extended usage session, regardless of user activity, as described in Sec. 7.2.
+4.3.3.: Reauthentication of the subscriber SHALL be repeated following any period of inactivity lasting 15 minutes or longer.
+4.3.3.: Reauthentication SHALL use both authentication factors.
+4.3.3.: The session SHALL be terminated (i.e., logged out) when either of these time limits is reached.
+4.3.4.: The CSP SHALL employ appropriately tailored security controls from the baseline security controls defined in [SP800-53] or equivalent federal (e.g., [FEDRAMP]) or industry standard that the organization has determined for the information systems, applications, and online services that these guidelines are used to protect.
+4.3.4.: SHALL ensure that the minimum assurance-related controls for the appropriate systems, or equivalent, are satisfied.
+4.3.5.: The CSP SHALL comply with its respective records retention policies in accordance with applicable laws, regulations, and policies, including any NARA records retention
+4.3.5.: If the CSP opts to retain records in the absence of any mandatory requirements, the CSP SHALL conduct a risk management process, including assessments of privacy and security risks, to determine how long records should be retained and SHALL inform the subscriber of that retention policy.
+4.4.: The CSP SHALL employ appropriately tailored privacy controls defined in [SP800-53] or equivalent industry standard.
+4.4.: with law or legal process, CSPs SHALL implement measures to maintain predictability and manageability commensurate with the privacy risk arising from the additional processing.
+4.4.: When CSPs use consent measures, CSPs SHALL NOT make consent for the additional processing a condition of the identity service.
+5.1.1.1.: Memorized secrets SHALL be at least 8 characters in length.
+5.1.1.1.: Memorized secrets SHALL be either chosen by the subscriber or assigned randomly by the CSP.
+5.1.1.1.: If the CSP disallows a chosen memorized secret because it is on a blocklist of commonly used, expected, or compromised values (see Sec. 5.1.1.2), the subscriber SHALL be required to choose a different memorized secret.
+5.1.1.1.: No other complexity requirements for memorized secrets SHALL be imposed.
+5.1.1.2.: Verifiers SHALL require memorized secrets to be at least 8 characters in length.
+5.1.1.2.: Verifiers SHALL verify the entire submitted memorized secret (i.e., not truncate the secret).
+5.1.1.2.: For purposes of the above length requirements, each Unicode code point SHALL be counted as a single character.
+5.1.1.2.: Memorized secret verifiers SHALL NOT permit the subscriber to store a hint that is accessible to an unauthenticated claimant.
+5.1.1.2.: Verifiers SHALL NOT prompt subscribers to use specific types of information (e.g., “What was the name of your first pet?”, a technique known as knowledge-based authentication (KBA) or security questions) when choosing memorized secrets.
+5.1.1.2.: When processing requests to establish and change memorized secrets, verifiers SHALL compare the prospective secrets against a blocklist that contains values known to be commonly used, expected, or compromised.
+5.1.1.2.: If the chosen secret is found in the blocklist, the CSP or verifier SHALL advise the subscriber that they need to select a different secret, SHALL provide the reason for rejection, and SHALL require the subscriber to choose a different value.
+5.1.1.2.: Verifiers SHALL offer guidance to the subscriber to assist the user in choosing a strong memorized secret.
+5.1.1.2.: Verifiers SHALL implement a rate-limiting mechanism that effectively limits the number of failed authentication attempts that can be made on the subscriber account as described in Sec. 5.2.2.
+5.1.1.2.: Verifiers SHALL NOT impose other composition rules (e.g., requiring mixtures of different character types or prohibiting consecutively repeated characters) for memorized secrets.
+5.1.1.2.: Verifiers SHALL NOT require users to periodically change memorized secrets.
+5.1.1.2.: However, verifiers SHALL force a change if there is evidence of compromise of the authenticator.
+5.1.1.2.: Verifiers SHALL allow the use of password managers.
+5.1.1.2.: The verifier SHALL use approved encryption and an authenticated protected channel when requesting memorized secrets in order to provide resistance to eavesdropping and adversary-in-the-middle attacks.
+5.1.1.2.: Verifiers SHALL store memorized secrets in a form that is resistant to offline attacks.
+5.1.1.2.: Memorized secrets SHALL be salted and hashed using a suitable password hashing scheme.
+5.1.1.2.: The salt SHALL be at least 32 bits in length and be chosen arbitrarily so as to minimize salt value collisions among stored hashes.
+5.1.1.2.: Both the salt value and the resulting hash SHALL be stored for each memorized secret authenticator.
+5.1.1.2.: SHALL be generated by an approved random bit generator [SP800-90Ar1] and provide at
+5.1.1.2.: The secret key value SHALL be stored separately from the hashed memorized secrets (e.g., in a specialized device like a hardware security module).
+5.1.2.1.: CSPs creating look-up secret authenticators SHALL use an approved random bit generator [SP800-90Ar1] to generate the list of secrets and SHALL deliver the authenticator securely to the subscriber.
+5.1.2.1.: Look-up secrets SHALL have at least 20 bits of entropy.
+5.1.2.1.: If distributed online, lookup secrets SHALL be distributed over a secure channel in accordance with the postenrollment binding requirements in Sec. 6.1.2.
+5.1.2.2.: Verifiers of look-up secrets SHALL prompt the claimant for the next secret from their authenticator or for a specific (e.g., numbered) secret.
+5.1.2.2.: A given secret from an authenticator SHALL be used successfully only once.
+5.1.2.2.: If the look-up secret is derived from a grid card, each cell of the grid SHALL be used only once.
+5.1.2.2.: Verifiers SHALL store look-up secrets in a form that is resistant to offline attacks.
+5.1.2.2.: Lookup secrets having at least 112 bits of entropy SHALL be hashed with an approved one-
+5.1.2.2.: Look-up secrets with fewer than 112 bits of entropy SHALL be salted and hashed using a suitable password hashing scheme, also described in Sec. 5.1.1.2.
+5.1.2.2.: The salt value SHALL be at least 32 bits in length and arbitrarily chosen so as to minimize salt value collisions among stored hashes.
+5.1.2.2.: Both the salt value and the resulting hash SHALL be stored for each look-up secret.
+5.1.2.2.: For look-up secrets that have less than 64 bits of entropy, the verifier SHALL implement a rate-limiting mechanism that effectively limits the number of failed authentication attempts that can be made on the subscriber account as described in Sec. 5.2.2.
+5.1.2.2.: The verifier SHALL use approved encryption and an authenticated protected channel when requesting look-up secrets in order to provide resistance to eavesdropping and AitM
+5.1.3.1.: The out-of-band authenticator SHALL establish a separate channel with the verifier in order to retrieve the out-of-band secret or authentication request.
+5.1.3.1.: Communication over the secondary channel SHALL be encrypted unless sent via the public switched telephone network (PSTN).
+5.1.3.1.: Channels or addresses that do not prove possession of a specific device, such as voice-over-IP (VOIP) telephone numbers, SHALL NOT be used for out-of-band authentication.
+5.1.3.1.: Email SHALL NOT be used for out-of-band authentication because it also does not prove possession of a specific device and is typically accessed using only a memorized secret.
+5.1.3.1.: The out-of-band authenticator SHALL uniquely authenticate itself in one of the following ways when communicating with the verifier:
+5.1.3.1.: The key used SHALL be stored in suitably secure storage available to the authenticator application (e.g., keychain storage, TPM, TEE, secure element).
+5.1.3.1.: This method SHALL only be used if a secret is being sent from the verifier to the out-of-band device via the PSTN (SMS or voice).
+5.1.3.1.: If the out-of-band authenticator requests approval over the secondary communication channel — rather than by the presenting a secret that the claimant transfers to the primary communication channel — it SHALL accept transfer of the secret from the primary channel and send it to the verifier over the secondary channel to associate the approval
+5.1.3.2.: The verifier SHALL NOT store the identifying key itself, but SHALL use a verification method (e.g., an approved hash function or proof of possession of the identifying key) to uniquely identify the authenticator.
+5.1.3.2.: Depending on the type of out-of-band authenticator, one of the following SHALL take place:
+5.1.3.2.: It SHALL then transmit a random secret to the out-of-band authenticator.
+5.1.3.2.: The verifier SHALL then wait for the secret to be returned on the primary communication channel.
+5.1.3.2.: The verifier SHALL display a random authentication secret to the claimant via the primary channel.
+5.1.3.2.: SHALL then wait for the secret to be returned on the secondary channel from the
+5.1.3.2.: In all cases, the authentication SHALL be considered invalid if not completed within 10 minutes.
+5.1.3.2.: In order to provide replay resistance as described in Sec. 5.2.8, verifiers SHALL accept a given authentication secret only once during the validity period.
+5.1.3.2.: The verifier SHALL generate random authentication secrets with at least 20 bits of entropy using an approved random bit generator [SP800-90Ar1].
+5.1.3.2.: If the authentication secret has less than 64 bits of entropy, the verifier SHALL implement a rate-limiting mechanism that effectively limits the number of failed authentication attempts that can be made on the subscriber account as described in Sec. 5.2.2.
+5.1.3.2.: Out-of-band verifiers SHALL consider all authentication operations to be single-factor unless the CSP has confirmed that the out-of-band authentication meets the requirements of Sec. 5.1.3.4.
+5.1.3.3.: SHALL verify that the pre-registered telephone number being used is associated with a
+5.1.3.3.: Changing the pre-registered telephone number is considered to be the binding of a new authenticator and SHALL only occur as described in Sec. 6.1.2.
+5.1.3.3.: Accordingly, verifiers SHALL ensure that alternative authenticator types are available to all subscribers and SHOULD remind subscribers of this limitation of PSTN out-of-band authenticators prior to binding.
+5.1.3.4.: Each use of the authenticator SHALL require the presentation of the activation factor.
+5.1.3.4.: The use of an activation secret by the authenticator SHALL meet the requirements of Sec. 5.2.11.
+5.1.3.4.: A biometric activation factor SHALL meet the requirements of Sec. 5.2.3, including limits on the number of consecutive authentication failures.
+5.1.3.4.: Submission of the activation factor SHALL be a separate operation from unlocking of the host device (e.g., smartphone), although the same activation factor used to unlock the host device MAY be used in the authentication operation.
+5.1.3.4.: The memorized secret or biometric sample used for activation — and any biometric data derived from the biometric sample such as a probe produced through signal processing — SHALL be zeroized immediately after the authentication operation.
+5.1.4.1.: The secret key and its algorithm SHALL provide at least the minimum security strength specified in the latest revision of [SP800-131A] (112 bits as of the date of this publication).
+5.1.4.1.: The nonce SHALL be of sufficient length to ensure that it is unique for each operation of the device over its lifetime.
+5.1.4.1.: If the nonce used to generate the authenticator output is based on a real-time clock, the nonce SHALL be changed at least once every 2 minutes.
+5.1.4.2.: As such, the symmetric keys used by authenticators are also present in the verifier, and SHALL be strongly protected against unauthorized disclosure by the use of access controls that limit access to the keys to only those software components on the device requiring access.
+5.1.4.2.: When a single-factor OTP authenticator is being associated with a subscriber account, the verifier or associated CSP SHALL use approved cryptography to either generate and exchange or to obtain the secrets required to duplicate the authenticator output.
+5.1.4.2.: The verifier SHALL use approved encryption and an authenticated protected channel when collecting the OTP in order to provide resistance to eavesdropping and AitM attacks.
+5.1.4.2.: In order to provide replay resistance as described in Sec. 5.2.8, verifiers SHALL accept a given OTP only once while it is valid.
+5.1.4.2.: SHALL have a defined lifetime that is determined by the expected clock drift — in either direction — of the authenticator over its lifetime, plus allowance for network delay and user entry of the OTP.
+5.1.4.2.: If the authenticator output has less than 64 bits of entropy, the verifier SHALL implement a rate-limiting mechanism that effectively limits the number of failed authentication attempts that can be made on the subscriber account as described in Sec. 5.2.2.
+5.1.5.: The multi-factor OTP device is something you have, and it SHALL be activated by either something you know or something you are.
+5.1.5.1.: Each use of the authenticator SHALL require the input of the activation factor.
+5.1.5.1.: The secret key and its algorithm SHALL provide at least the minimum security strength specified in the latest revision of [SP800-131A] (112 bits as of the date of this publication).
+5.1.5.1.: The nonce SHALL be of sufficient length to ensure that it is unique for each operation of the device over its lifetime.
+5.1.5.1.: If the nonce used to generate the authenticator output is based on a real-time clock, the nonce SHALL be changed at least once every 2 minutes.
+5.1.5.1.: The use of an activation secret by the authenticator SHALL meet the requirements of Sec. 5.2.11.
+5.1.5.1.: A biometric activation factor SHALL meet the requirements of Sec. 5.2.3, including limits on the number of consecutive authentication failures.
+5.1.5.1.: Submission of the activation factor SHALL be a separate operation from unlocking of the host device (e.g., smartphone), although the same activation factor used to unlock the host device MAY be used in the authentication operation.
+5.1.5.1.: The unencrypted key and activation secret or biometric sample — and any biometric data derived from the biometric sample such as a probe produced through signal processing — SHALL be zeroized immediately after an OTP has been generated.
+5.1.5.2.: As such, the symmetric keys used by authenticators SHALL be strongly protected against unauthorized disclosure by the use of access controls that limit access to the keys to only those software components on the device requiring access.
+5.1.5.2.: When a multi-factor OTP authenticator is being associated with a subscriber account, the verifier or associated CSP SHALL use approved cryptography to either generate and exchange or to obtain the secrets required to duplicate the authenticator output.
+5.1.5.2.: The verifier or CSP SHALL also establish, by issuance of the authentictor, that the authenticator is a multi-factor device.
+5.1.5.2.: Otherwise, the verifier SHALL treat the authenticator as single-factor, in accordance with Sec. 5.1.4.
+5.1.5.2.: The verifier SHALL use approved encryption and an authenticated protected channel when collecting the OTP in order to provide resistance to eavesdropping and AitM attacks.
+5.1.5.2.: In order to provide replay resistance as described in Sec. 5.2.8, verifiers SHALL accept a given OTP only once while it is valid.
+5.1.5.2.: SHALL have a defined lifetime that is determined by the expected clock drift — in either direction — of the authenticator over its lifetime, plus allowance for network delay and user entry of the OTP.
+5.1.5.2.: SHALL implement a rate-limiting mechanism that effectively limits the number of
+5.1.6.1.: The key SHALL be stored in suitably secure storage available to the authenticator application (e.g., keychain storage, TPM, or TEE if available).
+5.1.6.1.: The key SHALL be strongly protected against unauthorized disclosure by the use of access controls that limit access to the key to only those software components on the device requiring access.
+5.1.6.1.: They SHALL meet the requirements for connected authenticators in Sec. 5.2.12.
+5.1.7.1.: Single-factor cryptographic device authenticators use tamper-resistant hardware to encapsulate one or more secret keys unique to the authenticator that SHALL NOT be exportable (i.e., cannot be removed from the device).
+5.1.7.1.: The secret key and its algorithm SHALL provide at least the minimum security length specified in the latest revision of [SP800-131A] (112 bits as of the date of this publication).
+5.1.7.1.: The challenge nonce SHALL be at least 64 bits in length.
+5.1.7.1.: Approved cryptography SHALL be used.
+5.1.7.1.: SHALL either be a separate piece of hardware or an embedded processor or execution
+5.1.7.1.: A cryptographic device authenticator SHALL be designed so as to prohibit the export of the authentication secret to the host processor and SHALL NOT be capable of being reprogrammed by the host processor so as to allow the secret to be extracted.
+5.1.7.2.: While both types of keys SHALL be protected against modification, symmetric keys SHALL additionally be protected against unauthorized disclosure by the use of access controls that limit access to the key to only those software components on the device requiring access.
+5.1.7.2.: The challenge nonce SHALL be at least 64 bits in length, and SHALL either be unique over the authenticator’s lifetime or statistically unique (i.e., generated using an approved random bit generator [SP800-90Ar1]).
+5.1.7.2.: The verification operation SHALL use approved cryptography.
+5.1.8.: The multi-factor cryptographic software authenticator is something you have, and it SHALL be activated by either something you know or something you are.
+5.1.8.1.: The key SHALL be strongly protected against unauthorized disclosure by the use of access controls that limit access to the key to only those software components on the device requiring access.
+5.1.8.1.: They SHALL meet the requirementss for connected authenticators in Sec. 5.2.12.
+5.1.8.1.: Each authentication operation using the authenticator SHALL require the input of the activation factor.
+5.1.8.1.: The use of an activation secret by the authenticator SHALL meet the requirements of Sec. 5.2.11.
+5.1.8.1.: A biometric activation factor SHALL meet the requirements of Sec. 5.2.3, including limits on the number of consecutive authentication failures.
+5.1.8.1.: Submission of the activation factor SHALL be a separate operation from unlocking of the host device (e.g., smartphone), although the same activation factor used to unlock the host device MAY be used in the authentication operation.
+5.1.8.1.: The activation secret or biometric sample — and any biometric data derived from the biometric sample such as a probe produced through signal processing — SHALL be zeroized immediately after an authentication transaction has taken place.
+5.1.9.: The multi-factor cryptographic device is something you have, and it SHALL be activated by either something you know or something you are.
+5.1.9.1.: Multi-factor cryptographic device authenticators use tamper-resistant hardware to encapsulate one or more secret keys unique to the authenticator that SHALL NOT be exportable (i.e., cannot be removed from the device).
+5.1.9.1.: The secret key SHALL be accessible only through the presentation and verification of an activation factor, either a biometric characteristic or an activation secret as described in Sec. 5.2.11.
+5.1.9.1.: The secret key and its algorithm SHALL provide at least the minimum security length specified in the latest revision of [SP800-131A] (112 bits as of the date of this publication).
+5.1.9.1.: The challenge nonce SHALL be at least 64 bits in length.
+5.1.9.1.: Approved cryptography SHALL be used.
+5.1.9.1.: SHALL either be a separate piece of hardware or an embedded processor or execution
+5.1.9.1.: A cryptographic device authenticator SHALL be designed so as to prohibit the export of the authentication secret to the host processor and SHALL NOT be capable of being reprogrammed by the host processor so as to allow the secret to be extracted.
+5.1.9.1.: The use of an activation secret by the authenticator SHALL meet the requirements of Sec. 5.2.11.
+5.1.9.1.: A biometric activation factor SHALL meet the requirements of Sec. 5.2.3, including limits on the number of consecutive authentication failures.
+5.1.9.1.: Submission of the activation factor SHALL be a separate operation from unlocking of the host device (e.g., smartphone), although the same activation factor used to unlock the host device MAY be used in the authentication operation.
+5.1.9.1.: The activation secret or biometric sample — and any biometric data derived from the biometric sample such as a probe produced through signal processing — SHALL be zeroized immediately after an authentication transaction has taken place.
+5.2.1.: CSPs SHALL provide subscriber instructions on how to appropriately protect the authenticator against theft or loss.
+5.2.1.: The CSP SHALL provide a mechanism to invalidate the authenticator immediately upon notification from subscriber that loss or theft of the authenticator is suspected.
+5.2.2.: When required by the authenticator type descriptions in Sec. 5.1, the verifier SHALL implement controls to protect against online guessing attacks.
+5.2.2.: Unless otherwise specified in the description of a given authenticator, the verifier SHALL limit consecutive failed authentication attempts on a single subscriber account to no more than 100.
+5.2.3.: Biometrics SHALL be used only as part of multi-factor authentication with a physical authenticator (something you have).
+5.2.3.: The biometric system SHALL operate with a false-match rate (FMR) [ISO/IEC2382-37] of 1 in 10000 or better.
+5.2.3.: This FMR SHALL be achieved under conditions of a conformant attack (i.e., zero-effort impostor attempt) as defined in [ISO/IEC30107-1].
+5.2.3.: Testing of presentation attack resistance SHALL be in accordance
+5.2.3.: The biometric system SHALL allow no more than 5 consecutive failed authentication attempts or 10 consecutive failed attempts if PAD, meeting the above requirements, is implemented.
+5.2.3.: Once that limit has been reached, the biometric authenticator SHALL impose a delay of at least 30 seconds before each subsequent attempt, with an overall limit of no more than 50 consecutive failed authentication attempts (100 if PAD is implemented).
+5.2.3.: Once the overall limit is reached, the biometric system SHALL disable biometric user authentication and offer another factor (e.g., a different biometric modality or an activation secret if it is not already a required factor) if such an alternative method is already available.
+5.2.3.: The verifier SHALL make a determination of sensor and endpoint performance, integrity, and authenticity.
+5.2.3.: • Use of the biometric as an authentication factor SHALL be limited to one or more specific devices that are identified using approved cryptography.
+5.2.3.: Since the biometric has not yet unlocked the main authentication key, a separate key SHALL be used for identifying the device.
+5.2.3.: • Biometric revocation, referred to as biometric template protection in [ISO/IEC24745], SHALL be implemented.
+5.2.3.: • An authenticated protected channel between sensor (or an endpoint containing a sensor that resists sensor replacement) and verifier SHALL be established and the sensor or endpoint SHALL be authenticated prior to capturing the biometric sample from the claimant.
+5.2.3.: • All transmission of biometrics SHALL be over an authenticated protected channel.
+5.2.3.: Biometric samples and any biometric data derived from the biometric sample such as a probe produced through signal processing SHALL be zeroized immediately after any training or research data has been derived.
+5.2.3.: Biometric authentication technologies SHALL provide similar performance for subscribers of different demographic types (racial background, gender, ethnicity, etc.).
+5.2.4.: If this attestation is signed, it SHALL be signed using a digital signature that provides at least the minimum security strength specified in the latest revision of [SP800-131A] (112 bits as of the date of this publication).
+5.2.5.: Approved cryptographic algorithms SHALL be used to establish phishing resistance where it is required.
+5.2.5.: Keys used for this purpose SHALL provide at least the minimum security strength specified in the latest revision of [SP800-131A] (112 bits as of the date of this publication).
+5.2.5.: Authenticators that involve the manual entry of an authenticator output, such as out-ofband and OTP authenticators, SHALL NOT be considered phishing resistant because the manual entry does not bind the authenticator output to the specific session being authenticated.
+5.2.5.1.: An authentication protocol with channel binding SHALL establish an authenticated protected channel with the verifier.
+5.2.5.1.: It SHALL then strongly and irreversibly bind a channel identifier that was negotiated in establishing the authenticated protected channel to the authenticator output (e.g., by signing the two values together using a private key controlled by the claimant for which the public key is known to the verifier).
+5.2.5.1.: The verifier SHALL validate the signature or other information used to prove phishing resistance.
+5.2.5.2.: An authentication protocol with authenticator name binding SHALL establish an authenticated protected channel with the verifier.
+5.2.5.2.: It SHALL then generate an authenticator output that is cryptographically bound to a verifier identifier that is authenticated as part of the protocol.
+5.2.5.2.: In the case of domain name system (DNS) identifiers, the verifier identifier SHALL be either the authenticated hostname of the verifier or a parent domain that is at least one level below the public suffix [PSL] associated with that hostname.
+5.2.6.: Figure 1), communications between the verifier and CSP SHALL occur through a mutually authenticated secure channel (such as a client-authenticated TLS connection) using approved cryptography.
+5.2.7.: To be considered verifier compromise resistant, public keys stored by the verifier SHALL be associated with the use of approved cryptographic algorithms and SHALL provide at least the minimum security strength specified in the latest revision of [SP800-131A] (112 bits as of the date of this publication).
+5.2.7.: Other verifier compromise resistant secrets SHALL use approved hash algorithms and the underlying secrets SHALL have at least the minimum security strength specified in the latest revision of [SP800-131A] (112 bits as of the date of this publication).
+5.2.7.: Secrets (e.g., memorized secrets) having lower complexity SHALL NOT be considered verifier compromise resistant when hashed because of the potential to defeat the hashing process through dictionary lookup or exhaustive search.
+5.2.9.: Authentication intent SHALL be established by the authenticator itself, although multifactor cryptographic devices MAY establish intent by reentry of the activation factor for the authenticator.
+5.2.10.: If at any time the organization determines that the risk to any party is unacceptable, then that authenticator SHALL NOT be used.
+5.2.10.: Because the subscriber may be exposed to additional risk when an organization accepts a restricted authenticator and that the subscriber may have a limited understanding of and ability to control that risk, the CSP SHALL :
+5.2.11.: In either of these cases, the activation secret SHALL remain within the authenticator and its associated user endpoint.
+5.2.11.: Authenticators making use of activation secrets SHALL require the secrets to be at least 6 characters in length.
+5.2.11.: The authenticator SHALL contain a blocklist (either specified by specific values or by an algorithm) of at least 10 commonly used activation values and SHALL prevent their use as activation secrets.
+5.2.11.: The authenticator or verifier SHALL implement a retry-limiting mechanism that effectively limits the number of consecutive failed activation attempts using the authenticator to ten (10).
+5.2.11.: In all other cases, rate limiting SHALL be implemented in the authenticator.
+5.2.11.: Once the limit of 10 attempts is reached, the authenticator SHALL be disabled and a different authenticator SHALL be required for authentication.
+5.2.11.: If the authenticator verifies the activation secret locally (rather than using it for decryption of a key), verification SHALL be performed within a hardware-based authenticator or in a secure element (e.g., TEE, TPM) that releases the authentication secret only upon presentation of the correct activation secret.
+5.2.11.: In other circumstances (i.e., software-based multi-factor authenticators), the authenticator SHALL use the memorized secret as a key to decrypt its stored authentication secret.
+5.2.11.: Approved cryptography SHALL be used.
+5.2.12.: Wireless technologies having an effective range of 1 meter or more (e.g., Bluetooth LE) SHALL use an authenticated encrypted connection between the authenticator and endpoint.
+5.2.12.: A pairing process SHALL be used to establish a key for encrypted communication between the authenticator and endpoint.
+5.2.12.: The pairing process SHALL be authenticated through the use of a pairing code.
+5.2.12.: The pairing code SHALL be associated with either the authenticator or endpoint and SHALL have at least 20 bits or 6 decimal digits of entropy.
+5.2.12.: The pairing code MAY be printed on the associated device and SHALL be conveyed between the devices by manual entry or by using a QR code or similar representation that is optically communicated.
+5.2.12.: The entire authentication transaction SHALL be encrypted using a key established by the pairing process.
+5.2.12.: NFC), the activation secret, if any, transmitted from the endpoint to authenticator SHALL be encrypted using a key established through a pairing process between the devices or through a temporary wired connection.
+5.2.12.: If the authenticator is configured to require authenticated pairing, pairing code SHALL be used.
+5.2.12.: A mechanism for endpoints to remove persistent keys SHALL be provided.
+5.2.12.: Where cryptographic operations are required, approved cryptography SHALL be used.
+5.2.12.: All communication of authentication data between authenticators and endpoints SHALL occur directly between those devices or through an authenticated protected channel between the authenticator and endpoint.
+6.1.: Authenticators SHALL be bound to subscriber accounts either
+6.1.: Throughout the digital identity lifecycle, CSPs SHALL maintain a record of all authenticators that are or have been associated with each subscriber account.
+6.1.: The CSP or verifier SHALL maintain the information required for throttling authentication attempts when required, as described in Sec. 5.2.2.
+6.1.: The CSP SHALL also verify the type of
+6.1.: The record created by the CSP SHALL contain the date and time the authenticator was bound to the subscriber account.
+6.1.: When any new authenticator is bound to a subscriber account, the CSP SHALL ensure that the binding protocol and the protocol for provisioning the associated keys are done at a level of security commensurate with the AAL at which the authenticator will be used.
+6.1.: For example, protocols for key provisioning SHALL use authenticated protected channels or be performed in person to protect against adversary-in-the-middle attacks.
+6.1.: Binding of multi-factor authenticators SHALL require multi-factor authentication or equivalent (e.g., association with the session in which identity proofing has been just completed) be used in order to bind the authenticator.
+6.1.1.: The CSP SHALL bind at least one — and SHOULD bind at least two — physical (something you have) authenticators to the subscriber account, in addition to a memorized secret or one or more biometric characteristics.
+6.1.1.: SHALL be used to ensure that the same party acts as the applicant throughout the processes:
+6.1.2.1.: Before adding the new authenticator, the CSP SHALL first require the subscriber to authenticate at the AAL (or a higher AAL) at which the new authenticator will be used.
+6.1.2.1.: SHALL be performed following the request to bind a new authenticator, and SHALL be valid for 20 minutes.
+6.1.2.2.: Before binding the new authenticator, the CSP SHALL require the subscriber to authenticate at AAL1.
+6.1.2.3.: If a subscriber that has been identity proofed loses all authenticators necessary to complete authentication, that subscriber SHALL repeat the identity proofing process described in [SP800-63A].
+6.1.2.3.: The CSP SHALL require the claimant to authenticate using an authenticator of the remaining factor, if any, to confirm binding to the existing subscriber account.
+6.1.2.3.: Reestablishment of authentication factors at IAL3 SHALL be done in person or through a supervised remote process as described in [SP800-63A]
+6.1.2.3.: Sec. 5.6.8, and SHALL perform a successful biometric comparison against the biometric characteristic collected during the original identity proofing process.
+6.1.2.3.: Such accounts SHALL be treated as abandoned and a new subscriber account SHALL be established.
+6.1.2.3.: The confirmation code SHALL consist of at least 6 random alphanumeric characters generated by an approved random bit generator [SP800-90Ar1].
+6.1.2.3.: Confirmation codes SHALL be valid for at most:
+6.1.2.4.: In addition to the requirements given in Sec. 6.1.2.1, Sec. 6.1.2.2, and Sec. 6.1.2.3 above as applicable, the following requirements SHALL apply when binding an external authenticator:
+6.1.2.4.: • An authenticated protected session SHALL be established by the endpoint associated with the new authenticator and the CSP.
+6.1.2.4.: • The CSP SHALL generate a binding code using an approved random number generator and send it to either the new authenticator endpoint or the authenticated endpoint approving the binding.
+6.1.2.4.: The binding code SHALL have at least 40 bits of entropy if used in conjunction with an identifier entered on the previous step; otherwise a binding code with at least 112 bits of entropy SHALL be required.
+6.1.2.4.: • The subscriber SHALL transfer the binding code to the other endpoint.
+6.1.2.4.: This transfer SHALL be either manual or via a local out-of-band method such as a QR code.
+6.1.2.4.: The binding code SHALL NOT be communicated over any insecure channel such as email or PSTN (SMS or voice).
+6.1.2.4.: • The binding code SHALL be usable only once and SHALL be valid for a maximum of 10 minutes.
+6.1.2.4.: • The CSP SHALL provide clear instruction on what the subscriber should do in the event of an authenticator binding mishap, such as a button or contact address to allow a mis-bound authenticator to be quickly invalidated as appropriate.
+6.1.3.: Binding of these authenticators SHALL be done as described in Sec. 6.1.2.
+6.1.3.: In situations where the authenticator strength is not self-evident (e.g., between single-factor and multi-factor authenticators of a given type), the CSP SHALL assume the use of the weaker authenticator unless it is able to establish that the stronger authenticator is in fact being used (e.g., by verification with the issuer or manufacturer of the authenticator).
+6.2.: This backup authenticator SHALL be either a memorized secret or a physical authenticator.
+6.2.: The suspension SHALL be reversible if the subscriber successfully authenticates to the CSP using a valid (i.e., not suspended) authenticator and requests reactivation of an authenticator suspended in this manner.
+6.3.: SHALL NOT be usable for authentication.
+6.3.: The CSP SHALL require subscribers to surrender or prove destruction of any physical authenticator containing attribute certificates signed by the CSP as soon as practical after expiration or receipt of a renewed authenticator.
+6.4.: CSPs SHALL invalidate authenticators promptly when a subscriber account ceases to exist (e.g., subscriber’s death, discovery of a fraudulent subscriber), when requested by the subscriber, or when the CSP determines that the subscriber no longer meets its eligibility requirements.
+6.4.: The CSP SHALL require subscribers to surrender or certify destruction of any physical authenticator containing subscriber attributes, such as certificates signed by the CSP, as soon as practical after invalidation takes place.
+7.1.: A session secret SHALL be shared between the subscriber’s software and the service being accessed.
+7.1.: The secret SHALL be presented directly by the subscriber’s software or possession of the secret SHALL be proven using a cryptographic mechanism.
+7.1.: Continuity of authenticated sessions SHALL be based upon the possession of a session secret issued by the verifier at the time of authentication and optionally refreshed during the session.
+7.1.: Session secrets SHALL NOT be persistent (retained across a restart of the associated application or a reboot of the host device).
+7.1.: The secret used for session binding SHALL be generated by the session host in direct response to an authentication event.
+7.1.: A session MAY be considered at a lower AAL than the authentication event but SHALL NOT be considered at a higher AAL than the authentication event.
+7.1.: Secrets used for session binding SHALL meet all of the following requirements:
+6.: Authenticated sessions SHALL NOT fall back to an insecure transport, such as from https to http, following authentication.
+6.: URLs or POST content SHALL contain a session identifier that SHALL be verified by the RP to protect against cross-site request forgery.
+7.1.1.: Cookies used for session maintenance SHALL meet all of the following requirements:
+2.: This latter requirement is intended to limit the accumulation of cookies, but SHALL NOT be depended upon to enforce session timeouts.
+7.1.2.: The presence of an OAuth access token SHALL NOT be interpreted by the RP as presence of the subscriber, in the absence of other signals.
+7.2.: Periodic reauthentication of sessions SHALL be performed to confirm the continued presence of the subscriber at an authenticated session (i.e., that the subscriber has not
+7.2.: A session SHALL NOT be extended past the guidelines in Sections 4.1.3, 4.2.3, and 4.3.3 (depending on AAL) based on presentation of the session secret alone.
+7.2.: Prior to session expiration, the reauthentication time limit SHALL be extended by prompting the subscriber for the authentication factors specified in Table 2.
+7.2.: When a session has been terminated, due to a time-out or other action, the subscriber SHALL be required to establish a new session by authenticating again.

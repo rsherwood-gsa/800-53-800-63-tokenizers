@@ -1,0 +1,37 @@
+5.: At a minimum, organizations SHALL ensure that each step is executed and the normative mandates and outcomes of each step are completed and documented regardless of operational approach and enabling tools.
+5.1.1.: Accordingly, impact assessments SHALL include individuals using the system or application in addition to the organization itself.
+5.1.1.: At a minimum, agencies SHALL document all entities to which impacts will be assessed when conducting their impact analysis.
+5.1.2.: Initial assurance levels for digital transactions SHALL be determined by assessing the potential impact of, at a minimum, each of the following categories:
+5.1.2.: Each impact category SHALL be documented and consistently applied across different applications assessed by the organization.
+5.1.2.: Identification of harms for each category SHALL be done for each of the entities identified during “entity identification” process.
+3.: SHALL be evaluated separately.
+5.1.4.: To determine the appropriate level of assurance of the user’s asserted identity, organizations SHALL assess the potential risks and identify measures to minimize their impact.
+5.1.4.: Organizations SHALL assess the risk of identity proofing, authentication, and federation failures separately to determine the required assurance level for each transaction.
+5.1.4.: This process SHALL include consideration of potentially varying impacts of harms to different entities impacted by the digital identity system, as described in Sec. 5.1.1.
+5.2.1.: An organization RP SHALL select, based on cybersecurity risk and mission needs, the following individual initial assurance levels:
+5.2.3.: Organizations SHALL develop and document a process and governance model for selecting initial assurance levels based on the potential impact of digital identity failures.
+5.2.3.1.: Organizations SHALL use a risk-based approach to select the most appropriate identity proofing requirements for their RP application.
+5.2.3.1.: This initial selection SHALL be tailored, as described in Sec. 5.3, based on mission needs, risk tolerance, and potential impacts to privacy, equity, and usability, before making a final IAL determination.
+5.2.3.1.: SHALL be assessed based on the potential impacts of identity proofing failures.
+5.2.3.1.: As described in Sec. 5.1, potential impacts SHALL be considered from the perspective of the organization, individuals, other organizations, and the nation, for harms incurred through the use or operation of the RP application.
+5.2.3.2.: Organizations SHALL use a risk-based approach to select the most appropriate authentication requirements for their RP application.
+5.2.3.2.: This initial selection SHALL be tailored, as described in Sec. 5.3, based on mission needs, risk tolerance, and potential impacts to privacy, equity, and usability, before making a final AAL determination.
+5.2.3.2.: The initial AAL SHALL be assessed based on the potential impacts of authentication failures.
+5.2.3.2.: As described in Sec. 5.1, potential impacts SHALL be considered from the perspective of the organization, individuals, other organizations, and the nation, for harms incurred through the use or operation of the RP application, as the level of harm from a failure could vary significantly across these entities.
+5.2.3.3.: SHALL use a risk-based approach to select the most appropriate federation requirements for their RP application.
+5.2.3.3.: This initial selection SHALL be tailored, as described in Sec. 5.3, based on mission needs, risk tolerance, and potential impacts to privacy, equity, and usability, before making a final FAL determination.
+5.2.3.3.: The initial FAL SHALL be assessed based on the potential impacts of failures in the presentation or acceptance of assertions in federated identity architectures.
+5.2.3.3.: SHALL be considered from the perspective of the organization, individuals, other
+5.2.3.3.: Therefore, organizations SHALL establish and document an xAL tailoring process.
+5.2.3.3.: 1. SHALL include a structured governance approach to allow for decision-making  	and conflict resolution.
+5.2.3.3.: 2. SHALL document all decisions in the tailoring process, including the assessed  	xALs, modified xALs, and compensating controls in the Digital Identity  	Acceptance Statement (see Sec. 5.3.4).
+5.2.3.3.: 3. SHALL justify and document all risk-based decisions or modifications to  	the initially assessed xALs in the Digital Identity Acceptance Statement (see  	Sec. 5.3.4).
+5.3.1.: When transitioning from an initial assurance level to the final xAL selection and implementation, organizations SHALL conduct detailed assessments of the controls defined at the assurance level to determine potential impacts in their operational environment.
+5.3.1.: At a minimum, organizations SHALL assess impacts related to the following areas:
+5.3.1.: These assessments SHALL be extended to any compensating or supplemental controls as defined in Sec. 5.3.2 and Sec. 5.3.3.
+5.3.2.: Where compensating controls are implemented, organizations SHALL demonstrate comparability of a chosen alternative or document residual risk incurred by deviating from normative requirements.
+5.3.2.: Organizations SHALL implement procedures to document both the justification for any departure from normative requirements and detail the compensating controls employed.
+5.3.3.: Where organizations implement supplemental controls, these SHALL be assessed for impacts based on the same factors used to tailor the organization’s assurance level.
+5.3.3.: Supplemental controls SHALL be documented.
+5.3.4.: The statement SHALL include, at a minimum:
+5.5.: All data collected, transmitted, or shared SHALL be minimized and subject to a detailed privacy and legal assessment.
